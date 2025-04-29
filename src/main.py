@@ -82,6 +82,6 @@ print(category2.name)
 print(category2.description)
 print(len(category2.products))
 
-
 print("счетчик категорий при создании нового экземпляра ", Category.category_count)
 print("счетчик товаров ", Category.product_count)
+
