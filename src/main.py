@@ -40,20 +40,17 @@ class Category:
     name: str  # название
     description: str  # описание
     products: list  # список товаров категории
-    description: list
-    price: float
-    quantity: int
     category_count = 0  # Атрибут класса для подсчета категорий
     product_count = 0  # Атрибут класса для подсчета товаров
 
-    def __init__(self, name, description, product_s):
+    def __init__(self, name, description, products):
         self.name = name
         self.description = description
-        self.products = product_s
+        self.products = products
         # Увеличиваем счетчик категорий при создании нового экземпляра
         Category.category_count += 1
         # Увеличиваем счетчик товаров на количество товаров в категории
-        Category.product_count += len(product_s)
+        Category.product_count += len(products)
 
 
 product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
